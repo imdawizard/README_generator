@@ -34,38 +34,38 @@ function promptUser () {
         {
             type: 'input',
             name: 'installation',
-            message: 'Couldest my most illustrious highness enter thine step-by-step instructions to get the development environment running?(what are the steps required to install your project?)'
+            message: 'Couldest my most illustrious highness enter thine step-by-step instructions to get the development environment running?(what are the steps required to install your project?: '
         },
         {
             type: 'input',
             name: 'usage',
-            message: 'If thine will ordaines me your majesity, please provide instructions and examples for how to use thine most dominant program'
+            message: 'If thine will ordaines me your majesity, please provide instructions and examples for how to use thine most dominant program: '
         },
         {
             type: 'input',
             name: 'credits',
-            message: 'Although my I know my excellency is formidable, please list any collaborators, if any, with links to their github profiles, or other assets/tutooorials, please include those here as well.'
+            message: 'Although my I know my excellency is formidable, please list any collaborators, if any, with links to their github profiles, or other assets/tutooorials, please include those here as well: '
         },
         {
             type: 'list',
             name: 'license',
-            message: 'If my gracious lord could choose a license for thine project.',
+            message: 'If my gracious lord could choose a license for thine project: ',
             choices: ['MIT', 'Apache-2.0', 'GPL-3.0', 'none']
         },
         {
             type: 'input',
             name: 'features',
-            message: 'Features upon features! My excellency has many features, please enter them to a humble servent:'
+            message: 'Features upon features! My excellency has many features, please enter them to a humble servent: '
         },
         {
             type: 'input',
             name: 'contributing',
-            message: 'If your humbleness desires more to contribute please others to contribute, please enter how they may do so:'
+            message: 'If your humbleness desires more to contribute please others to contribute, please enter how they may do so: '
         },
         {
             type: 'input',
             name: 'tests',
-            message: 'Please tell your humble servent how one may test thy magnificant project:'
+            message: 'Please tell your humble servent how one may test thy magnificant project: '
         },
         {
             type: 'input',
