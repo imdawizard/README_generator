@@ -82,7 +82,7 @@ function promptUser () {
 // TODO: Create a function to write README file
 function generateREADME(answers) {
     let tableOfContents = '';
-    let badge = `![Static Badge](https://img.shields.io/badge/${answers.license})`;
+    let badge = `[![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})`;
     if (answers.tableOfContents.toLowerCase() === 'y') {
         tableOfContents = '## Table of Contents\n - [Installation](#installation)\n - [usage](#usage)\n - [Credits](#credits)\n - [License](#license)\n - [Features](#featues)\n - [Contribution Guidelines](#contributing)\n - [Tests](#tests)\n - [Github link](#github)\n';
     }
