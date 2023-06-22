@@ -2,7 +2,7 @@
 # Professional README Generator
 
 ## Description
-This project creates professional README.md files
+This project solves the veryunwanted issue of wasting time trying to make a README for your project! It involves node and inquierer packages to use the command interface prompts to create an auto-generated professional README!
 
 ## Table of Contents
  - [Installation](#installation)
@@ -16,25 +16,27 @@ This project creates professional README.md files
 
 
 ## Installation
-First download node, then Inquirer
+You will
+1. Need node downloaded onto your machine.
+2. Ensure that the inquirer package is also downloaded.
+3. Need to open your terminal of choice for #usage.
 
 ## Usage
-The prompt will ask questions, then answer them to the best of your ablity
+Run node index in your terminal of choice then answer the questions to the best of your ability, then the program will put them into the correct sections.
 
 ## Credits
-None
 
 ## License
-This project is licensed under the MIT license.
+This project does not currently have a license.
 
 ## Features
-More featues
+There are many features including multiple if statements for the purpose of changing the badge and license sections depending on the choice of the user. In addition another if statement was created for the purpose of having the choice of including a table of contents.
 
 ## Contribution Guidelines
-none
+This is a private project for instructional purposes. Future contributions are unlikely but possible.
 
 ## Tests
-testing?
+Test project by entering node index into your command line, and watch the magic happen!
 
 ### Questions
 For any questions, please contact me:

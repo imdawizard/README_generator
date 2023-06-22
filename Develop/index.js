@@ -12,21 +12,21 @@ function promptUser () {
         {
             type: 'input',
             name: 'title',
-            message: 'Thank you for choosing the auto-README-generator my lord, to get started, what is the title of your most superior project?'
+            message: 'What is the title of your project?'
         },
         {
             type: 'input',
             name: 'description',
-            message: 'My lord, it would please me if you could provide a short description explaining the what, why and how of your project(ex. what was your motivation?, Why did you build this project?, What problem does it solve? What did you learn?'
+            message: 'Please provide a short description explaining the what, why and how of your project(ex. what was your motivation?, Why did you build this project?, What problem does it solve? What did you learn?'
         },
         {
             type: 'input',
             name: 'tableOfContents',
-            message: 'Does my Lord desire a table of contents? (y/n):',
+            message: 'Would you like to add a table of Contents? (y/n):',
             validate: function (input) {
                 const validOptions = ['y', 'n'];
                 if (!validOptions.includes(input.toLowerCase())) {
-                    return 'My lord, you are quite the jester, please your humble servent only knows "y" or "n"';
+                    return 'Please enter either a "y" or  an "n"';
                 }
                 return true;
             }
@@ -34,43 +34,43 @@ function promptUser () {
         {
             type: 'input',
             name: 'installation',
-            message: 'Couldest my most illustrious highness enter thine step-by-step instructions to get the development environment running?(what are the steps required to install your project?: '
+            message: 'Please enter step-by-step instructions to get the development environment running?(what are the steps required to install your project?: '
         },
         {
             type: 'input',
             name: 'usage',
-            message: 'If thine will ordaines me your majesity, please provide instructions and examples for how to use thine most dominant program: '
+            message: 'Please provide instructions and examples for how to use the program: '
         },
         {
             type: 'input',
             name: 'credits',
-            message: 'Although my I know my excellency is formidable, please list any collaborators, if any, with links to their github profiles, or other assets/tutooorials, please include those here as well: '
+            message: 'Please list any collaborators, if any, with links to their github profiles, or other assets/tutooorials, please include those here as well: '
         },
         {
             type: 'list',
             name: 'license',
-            message: 'If my gracious lord could choose a license for thine project: ',
+            message: 'Choose a license: ',
             choices: ['MIT', 'Apache-2.0', 'GPL-3.0', 'none']
         },
         {
             type: 'input',
             name: 'features',
-            message: 'Features upon features! My excellency has many features, please enter them to a humble servent: '
+            message: 'Please describe your projects features: '
         },
         {
             type: 'input',
             name: 'contributing',
-            message: 'If your humbleness desires more to contribute please others to contribute, please enter how they may do so: '
+            message: 'Please enter your constribution guidelines: '
         },
         {
             type: 'input',
             name: 'tests',
-            message: 'Please tell your humble servent how one may test thy magnificant project: '
+            message: 'Please enter testing instructions: '
         },
         {
             type: 'input',
             name: 'github',
-            message: 'Would mylord allow privy to thine github username?: '
+            message: 'Please enter your Github username: '
         },
         {
             type: 'input',
@@ -83,11 +83,13 @@ function promptUser () {
 function generateREADME(answers) {
     let tableOfContents = '';
     let badge = `[![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-blue.svg)](https://opensource.org/licenses/${answers.license})`;
+    let license = `This project is licensed under the ${answers.license} license.`
     if (answers.tableOfContents.toLowerCase() === 'y') {
         tableOfContents = '## Table of Contents\n - [Installation](#installation)\n - [usage](#usage)\n - [Credits](#credits)\n - [License](#license)\n - [Features](#featues)\n - [Contribution Guidelines](#contributing)\n - [Tests](#tests)\n - [Github link](#github)\n';
     }
     if (answers.license === 'none') {
         badge = '';
+        license = "This project does not currently have a license"
     }
     return `
 ${badge}
@@ -108,7 +110,7 @@ ${answers.usage}
 ${answers.credits}
 
 ## License
-This project is licensed under the ${answers.license} license.
+${license}
 
 ## Features
 ${answers.features}
@@ -133,7 +135,7 @@ Email: ${answers.email}
 // TODO: Create a function to initialize app
 async function init() {
     try {
-        console.log("Welcome my Lord to the auto-README-generator!\n");
+        console.log("Welcome to the auto-README-generator!\n");
 
         const answers = await promptUser();
 

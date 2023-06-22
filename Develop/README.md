@@ -1,9 +1,9 @@
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-# 
+
+# y
 
 ## Description
-
+y
 
 ## Table of Contents
  - [Installation](#installation)
@@ -17,29 +17,29 @@
 
 
 ## Installation
-
+y
 
 ## Usage
-
+y
 
 ## Credits
-
+y
 
 ## License
-This project is licensed under the MIT license.
+This project does not currently have a license
 
 ## Features
-
+y
 
 ## Contribution Guidelines
-
+y
 
 ## Tests
-
+y
 
 ### Questions
 For any questions, please contact me:
 
-GitHub: [](https://github.com/)
+GitHub: [y](https://github.com/y)
 
-Email: 
+Email: y
