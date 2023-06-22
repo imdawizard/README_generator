@@ -1,9 +1,9 @@
 
-
-# y
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+# auto-reademe Generator
 
 ## Description
-y
+Test
 
 ## Table of Contents
  - [Installation](#installation)
@@ -17,29 +17,29 @@ y
 
 
 ## Installation
-y
+test
 
 ## Usage
-y
+test
 
 ## Credits
-y
+ttest
 
 ## License
-This project does not currently have a license
+This project is licensed under the MIT license.
 
 ## Features
-y
+test
 
 ## Contribution Guidelines
-y
+test
 
 ## Tests
-y
+test
 
 ### Questions
 For any questions, please contact me:
 
-GitHub: [y](https://github.com/y)
+GitHub: [imdawizard](https://github.com/imdawizard)
 
-Email: y
+Email: nate.is.cool.yeah@gmail.com
